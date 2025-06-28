@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamScape - Conecta con personas de todo el mundo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4f46e5">
+    <link rel="icon" type="image/png" sizes="192x192" href="icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="icon-512x512.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="gradient-text">StreamScape</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#features">Características</a></li>
+                    <li><a href="#pricing">Precios</a></li>
+                    <li><a href="#about">Acerca de</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="login.html" class="btn btn-outline">Iniciar Sesión</a>
+                <a href="signup.html" class="btn btn-primary">Registrarse</a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Conecta con personas de todo el mundo</h1>
+                    <p>StreamScape une a las personas a través de conversaciones significativas y videollamadas. Encuentra tu conexión perfecta hoy.</p>
+                    <div class="hero-actions">
+                        <a href="signup.html?plan=trial" class="btn btn-gradient">Comenzar Prueba Gratuita</a>
+                        <button id="try-demo" class="btn btn-outline">Probar Demo</button>
+                    </div>
+                    <p class="hero-note">Disfruta de una prueba gratuita de 3 días con acceso completo a todas las funciones. No se requiere tarjeta de crédito.</p>
+                </div>
+                <div class="hero-image">
+                    <div class="chat-demo">
+                        <div class="chat-header">
+                            <div class="user-info">
+                                <div class="avatar">JS</div>
+                                <div>
+                                    <h3>Jessica Smith</h3>
+                                    <p>En línea ahora</p>
+                                </div>
+                            </div>
+                            <div class="chat-actions">
+                                <button class="icon-button"><span class="icon">💬</span></button>
+                                <button class="icon-button" id="video-call-btn"><span class="icon">📹</span></button>
+                            </div>
+                        </div>
+                        <div class="chat-messages" id="demo-messages">
+                            <div class="message received">
+                                <p>¡Hola! Vi que tenemos intereses similares en fotografía. ¿Qué tipo de cámara usas?</p>
+                            </div>
+                            <div class="message sent">
+                                <p>¡Hola Jessica! Encantado de conocerte. Uso una Sony Alpha para la mayoría de mi trabajo. ¿También disfrutas de la fotografía de paisajes?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Características que te encantarán</h2>
+                    <p>StreamScape ofrece todo lo que necesitas para construir conexiones significativas</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">💬</div>
+                        <h3>Mensajería Instantánea</h3>
+                        <p>Conéctate a través de texto con nuestra intuitiva plataforma de mensajería</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📹</div>
+                        <h3>Videollamadas HD</h3>
+                        <p>Experimenta videollamadas de alta calidad con cualquier persona en todo el mundo</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌎</div>
+                        <h3>Conexiones Globales</h3>
+                        <p>Conoce personas de diferentes culturas y orígenes en todo el mundo</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Seguridad Avanzada</h3>
+                        <p>Tu privacidad y seguridad son nuestra prioridad con encriptación de extremo a extremo</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Emparejamiento Inteligente</h3>
+                        <p>Algoritmos avanzados que te conectan con personas compatibles</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Multiplataforma</h3>
+                        <p>Disponible en web, móvil y como aplicación instalable</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Elige tu Plan</h2>
+                    <p>Selecciona la suscripción perfecta que se adapte a tus necesidades</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Basic</h3>
+                        <div class="price">$30.00<span>/mes</span></div>
+                        <ul class="features-list">
+                            <li>Mensajes de texto ilimitados</li>
+                            <li>5 horas de videollamadas al mes</li>
+                            <li>Personalización básica de perfil</li>
+                            <li>Soporte por email</li>
+                        </ul>
+                        <a href="signup.html?plan=basic" class="btn btn-outline btn-full">Comenzar con Basic</a>
+                        <p class="pricing-note">o <a href="signup.html?plan=trial">prueba gratis por 3 días</a></p>
+                    </div>
+                    <div class="pricing-card featured">
+                        <div class="badge">POPULAR</div>
+                        <h3>Premium</h3>
+                        <div class="price">$40.00<span>/mes</span></div>
+                        <ul class="features-list">
+                            <li>Mensajes de texto ilimitados</li>
+                            <li>20 horas de videollamadas al mes</li>
+                            <li>Personalización avanzada de perfil</li>
+                            <li>Emparejamiento prioritario</li>
+                            <li>Soporte prioritario</li>
+                        </ul>
+                        <a href="signup.html?plan=premium" class="btn btn-gradient btn-full">Comenzar con Premium</a>
+                        <p class="pricing-note">o <a href="signup.html?plan=trial">prueba gratis por 3 días</a></p>
+                    </div>
+                    <div class="pricing-card">
+                        <h3>Ultimate</h3>
+                        <div class="price">$45.00<span>/mes</span></div>
+                        <ul class="features-list">
+                            <li>Mensajes de texto ilimitados</li>
+                            <li>Videollamadas ilimitadas</li>
+                            <li>Personalización premium de perfil</li>
+                            <li>Emparejamiento prioritario</li>
+                            <li>Acceso a eventos exclusivos</li>
+                            <li>Soporte VIP 24/7</li>
+                        </ul>
+                        <a href="signup.html?plan=ultimate" class="btn btn-outline btn-full">Comenzar con Ultimate</a>
+                        <p class="pricing-note">o <a href="signup.html?plan=trial">prueba gratis por 3 días</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h2>Acerca de StreamScape</h2>
+                        <p>StreamScape fue creado con una misión simple: conectar a personas de todos los rincones del mundo a través de conversaciones significativas y conexiones auténticas.</p>
+                        <p>Nuestra plataforma utiliza algoritmos avanzados de emparejamiento para ayudarte a encontrar personas que comparten tus intereses, valores y objetivos. Ya sea que busques amistad, romance o simplemente conversaciones interesantes, StreamScape facilita la conexión.</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <h3>1M+</h3>
+                                <p>Usuarios activos</p>
+                            </div>
+                            <div class="stat">
+                                <h3>150+</h3>
+                                <p>Países</p>
+                            </div>
+                            <div class="stat">
+                                <h3>10M+</h3>
+                                <p>Conexiones realizadas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-features">
+                        <h3>¿Por qué elegir StreamScape?</h3>
+                        <ul class="check-list">
+                            <li>Plataforma segura con perfiles verificados</li>
+                            <li>Emparejamiento avanzado basado en compatibilidad</li>
+                            <li>Video y audio de alta calidad para una comunicación clara</li>
+                            <li>Comunidad global con usuarios de más de 150 países</li>
+                            <li>Soporte al cliente 24/7 para cualquier problema</li>
+                            <li>Aplicación web progresiva (PWA) instalable</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>StreamScape</h4>
+                    <p>Conectando personas de todo el mundo a través de conversaciones significativas.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Producto</h4>
+                    <ul>
+                        <li><a href="#features">Características</a></li>
+                        <li><a href="#pricing">Precios</a></li>
+                        <li><a href="download.html">Descargar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Soporte</h4>
+                    <ul>
+                        <li><a href="help.html">Centro de Ayuda</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="status.html">Estado del Servicio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Términos de Servicio</a></li>
+                        <li><a href="privacy.html">Política de Privacidad</a></li>
+                        <li><a href="cookies.html">Política de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 StreamScape. Todos los derechos reservados.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de videollamada -->
+    <div id="video-modal" class="modal hidden">
+        <div class="modal-content video-modal-content">
+            <div class="modal-header">
+                <h3>Videollamada</h3>
+                <p>Conectando con Jessica Smith...</p>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="video-container">
+                <div class="main-video">
+                    <div class="avatar-placeholder">JS</div>
+                </div>
+                <div class="self-video">
+                    <div class="avatar-placeholder small">Tú</div>
+                </div>
+                <div class="call-controls">
+                    <button class="btn btn-danger" id="end-call">Finalizar</button>
+                    <button class="btn btn-secondary">Silenciar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón de instalación PWA -->
+    <div id="install-prompt" class="install-prompt hidden">
+        <div class="install-content">
+            <span class="install-icon">📱</span>
+            <div class="install-text">
+                <strong>Instalar StreamScape</strong>
+                <p>Accede más rápido desde tu dispositivo</p>
+            </div>
+            <button id="install-button" class="btn btn-primary btn-sm">Instalar</button>
+            <button id="dismiss-install" class="btn-close">&times;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Registrar Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then((registration) => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch((registrationError) => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
